@@ -1,3 +1,4 @@
+# 结构
 ## 1. SQL -- mySQL 结构
 ### 1. table
 * 一级结构
@@ -27,4 +28,5 @@
 * 类似于 row
 ### 3. 没有SQL中的 relation
 * MongoDB 将数据存储为一个文档，数据结构由键值(key=>value)对组成. MongoDB 文档类似于 JSON 对象。字段值可以包含其他文档，数组及文档数组
-
+# Replica
+# Sharding
