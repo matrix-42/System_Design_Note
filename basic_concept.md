@@ -57,7 +57,8 @@
 
 ### 结构
 * **shard**: Each shard contains a subset of the sharded data. Shards must be deployed as a replica set.
-* **mongos**: The mongos acts as a query router, providing an interface between client applications and the sharded cluster. The mongos tracks what data is on which shard by caching the metadata from the config servers.
+* **mongos**: The mongos acts as a query router, providing an interface between client applications and the sharded cluster. The mongos tracks what data is on which shard by caching the metadata from the config servers. 
+(*The most common practice is to run mongos instances on the same systems as your application servers, but you can maintain mongos instances on the shards or on other dedicated resources.*)
 * **config servers**: Config servers store metadata and configuration settings for the cluster. Config servers must be deployed as a replica set (CSRS).
 
 
