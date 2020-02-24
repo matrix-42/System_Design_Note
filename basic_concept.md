@@ -54,3 +54,18 @@
 # Sharding
 ## MongoDB
 ![mongodb-sharded-cluster-production-architecture](https://docs.mongodb.com/manual/_images/sharded-cluster-production-architecture.bakedsvg.svg)
+
+### 结构
+* shard: Each shard contains a subset of the sharded data. Shards must be deployed as a replica set.
+* mongos: The mongos acts as a query router, providing an interface between client applications and the sharded cluster.
+* config servers: Config servers store metadata and configuration settings for the cluster. Config servers must be deployed as a replica set (CSRS).
+
+
+### hash sharding
+* Hashed Sharding involves computing a hash of the shard key field’s value. Each chunk is then assigned a range based on the hashed shard key values.
+* 不支持range query
+
+### range sharding
+* Ranged sharding involves dividing data into ranges based on the shard key values. Each chunk is then assigned a range based on the shard key values.
+* A range of shard keys whose values are “close” are more likely to reside on the same chunk. This allows for targeted operations as a mongos can route the operations to only the shards that contain the required data.
+* 支持range query
