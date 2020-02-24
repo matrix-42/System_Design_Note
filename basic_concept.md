@@ -56,9 +56,9 @@
 ![mongodb-sharded-cluster-production-architecture](https://docs.mongodb.com/manual/_images/sharded-cluster-production-architecture.bakedsvg.svg)
 
 ### 结构
-* shard: Each shard contains a subset of the sharded data. Shards must be deployed as a replica set.
-* mongos: The mongos acts as a query router, providing an interface between client applications and the sharded cluster.
-* config servers: Config servers store metadata and configuration settings for the cluster. Config servers must be deployed as a replica set (CSRS).
+* **shard**: Each shard contains a subset of the sharded data. Shards must be deployed as a replica set.
+* **mongos**: The mongos acts as a query router, providing an interface between client applications and the sharded cluster. The mongos tracks what data is on which shard by caching the metadata from the config servers.
+* **config servers**: Config servers store metadata and configuration settings for the cluster. Config servers must be deployed as a replica set (CSRS).
 
 
 ### hash sharding
