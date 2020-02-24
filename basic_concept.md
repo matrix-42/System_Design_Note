@@ -52,3 +52,5 @@
 
 
 # Sharding
+## MongoDB
+![mongodb-sharded-cluster-production-architecture](https://docs.mongodb.com/manual/_images/sharded-cluster-production-architecture.bakedsvg.svg)
