@@ -68,7 +68,7 @@
 * **config servers**: Config servers store metadata and configuration settings for the cluster. Config servers must be deployed as a replica set (CSRS).
 
 ### shard key
-- 
+- The shard key is either an indexed field or indexed **compound** fields that exists in every document in the collection.
 
 ### hash sharding
 * Hashed Sharding involves computing a hash of the shard key field’s value. Each chunk is then assigned a range based on the hashed shard key values.
