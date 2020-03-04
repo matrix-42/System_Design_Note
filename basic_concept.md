@@ -65,6 +65,7 @@
 
 [clustering key vs secondary index](https://stackoverflow.com/questions/24622511/what-is-the-difference-between-a-clustering-column-and-secondary-index-in-cassan)
 
+[concept of indexing in apache cassandra](https://www.geeksforgeeks.org/concept-of-indexing-in-apache-cassandra/)
 [资料](https://dzone.com/articles/cassandra-data-modeling-primary-clustering-partiti)
 
 
