@@ -56,16 +56,15 @@
 #### clustering key:
   - 用来在partition里排序, 可以是复合的. primary key 的剩下的 column
   - 可以这样理解: partition key 规定了partition的排列方式, clustering key 规定了数据在partition里的排列方式, 相当于每个partition里的 primary key.
-  - 为什么需要column key: 数据在磁盘里肯定是顺序存储的, 不论有没有给定排列方式. 不如给一个常用的排列方式.
+  - 为什么需要column key: 数据在磁盘里肯定是顺序存储的, 不论有没有给定排列方式. 不如给一个常用的排列方式. And Cassandra is designed to perform sequential reads for query results.
   
 ### 3. secondary index
 -  A secondary index is pretty similar to what we know from regular relational databases. If you have a query with a where clause that uses column values that are not part of the primary key, lookup would be slow because a full row search has to be performed. Secondary indexes make it possible to service such queries efficiently. Secondary indexes are stored as extra tables, and just store extra data to make it easy to find your way in the main table.
 - **Secondary indexes are implemented as local indexes -- they are not distributed in the cluster**
 - 如果需要filter 的 column 不是clustering key, 则我们可以加一个secondary index, 来加速查找.
 - [用法](https://stackoverflow.com/questions/29692738/how-do-secondary-indexes-work-in-cassandra):
-  - ***select * from 表 where primary_key=some_value and secondary_index=some_value***
-  - Query with only secondary index is also possible in Cassandra 
-  ***select * from 表 where secondary_index=some_value*** But this has a large impact on fetching data, because it reads all partitions on distributed environment. The data fetched by this query is also not consistent and could not relay on it.
+  - `select * from TABLE_NAME where primary_key=some_value and secondary_index=some_value`
+  - Query with only secondary index is also possible in Cassandra `select * from TABLE_NAME where secondary_index=some_value` But this has a large impact on fetching data, because it reads all partitions on distributed environment. The data fetched by this query is also not consistent and could not relay on it.
 
 其他资料:
 - [clustering key vs secondary index](https://stackoverflow.com/questions/24622511/what-is-the-difference-between-a-clustering-column-and-secondary-index-in-cassan)
