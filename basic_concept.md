@@ -50,8 +50,19 @@
 - **row** : column family 中的每一行称作 row
 
 ### 2. primary key
-- partition key: sharding定位
-- clustering key : 用来排序, 可以是复合的
+#### partition key:
+  - sharding定位, primary key 的 1st column
+  - generates a token hash value that determines which node in a cluster the partition will be stored on
+#### clustering key:
+  - 用来在cluster里排序, 可以是复合的. primary key 的剩下的 column
+  - 可以这样理解: partition key 规定了node的排列方式, clustering key 规定了数据在node(cluster)里的排列方式, 相当于每个cluster 里的 primary key.
+  - 为什么需要column key: 数据在磁盘里肯定是顺序存储的, 不论有没有给定排列方式. 不如给一个常用的排列方式.
+  
+### 3. secondary index
+-  A secondary index is pretty similar to what we know from regular relational databases. If you have a query with a where clause that uses column values that are not part of the primary key, lookup would be slow because a full row search has to be performed. Secondary indexes make it possible to service such queries efficiently. Secondary indexes are stored as extra tables, and just store extra data to make it easy to find your way in the main table.
+- **Secondary indexes are implemented as local indexes -- they are not distributed in the cluster**
+
+[clustering key vs secondary index](https://stackoverflow.com/questions/24622511/what-is-the-difference-between-a-clustering-column-and-secondary-index-in-cassan)
 
 [资料](https://dzone.com/articles/cassandra-data-modeling-primary-clustering-partiti)
 
