@@ -38,13 +38,13 @@
 * collection : 一级结构
 * document : collection 中的每一行称作 document
 
-### 3. index
+### 2. index
 - MongoDB 的index 是local 的 类似Cassandra 的 Secondary index.
 
 ### 2. 没有SQL中的 relation
 * MongoDB 将数据存储为一个文档，数据结构由键值(key=>value)对组成. MongoDB 文档类似于 JSON 对象。字段值可以包含其他文档，数组及文档数组
 
-### 3. Faster than SQL?
+### 4. Faster than SQL?
 * https://stackoverflow.com/questions/9702643/mysql-vs-mongodb-1000-reads
 
 ## 3. Cassandra
