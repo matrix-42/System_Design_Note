@@ -40,6 +40,8 @@
 
 ### 2. index
 - MongoDB 的index 是local 的 类似Cassandra 的 Secondary index.
+- For an update, remove, find - if mongos is not given a shard key - then it’s going to have to broadcast the request to all the different shards that cover the collection.
+- 相当于MongoDB 只有partition key; clustering key 和 secondary key 合并为index.
 
 ### 2. 没有SQL中的 relation
 * MongoDB 将数据存储为一个文档，数据结构由键值(key=>value)对组成. MongoDB 文档类似于 JSON 对象。字段值可以包含其他文档，数组及文档数组
