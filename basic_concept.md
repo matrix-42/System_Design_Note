@@ -1,9 +1,9 @@
 # 结构
 ## 1. SQL -- mySQL 结构
-### 1. table
-* 一级结构
-* table 中的每一行称作 row
-* row 中每一列称为field
+### 1. 结构
+* table : 一级结构
+* row : table 中的每一行称作 row
+* field : row 中每一列称为field
 
 ### 2. primary key
 * 对于关系表，有个很重要的约束，就是任意两条记录不能重复。不能重复不是指两条记录不完全相同，而是指能够通过某个字段唯一区分出不同的记录，这个字段被称为主键。
@@ -33,16 +33,28 @@
 * 复合索引的结构与电话簿类似，人名由姓和名构成，电话簿首先按姓氏对进行排序，然后按名字对有相同姓氏的人进行排序。如果您知道姓，电话簿将非常有用；如果您知道姓和名，电话簿则更为有用，但如果您只知道名不姓，电话簿将没有用处。
 * 类似于字典顺序!!
 
-## 2. NOSQL-- MongoDB 结构
-### 1. collection 
-* 类似于 table
-### 2. document
-* 类似于 row
-### 3. 没有SQL中的 relation
+## 2. MongoDB 结构
+### 1. 结构
+* collection : 一级结构
+* document : collection 中的每一行称作 document
+
+### 2. 没有SQL中的 relation
 * MongoDB 将数据存储为一个文档，数据结构由键值(key=>value)对组成. MongoDB 文档类似于 JSON 对象。字段值可以包含其他文档，数组及文档数组
 
-### 4. Faster than SQL?
+### 3. Faster than SQL?
 * https://stackoverflow.com/questions/9702643/mysql-vs-mongodb-1000-reads
+
+## 3. Cassandra
+### 1. 结构
+- **column family** : 一级结构
+- **row** : column family 中的每一行称作 row
+
+### 2. primary key
+- partition key: sharding定位
+- clustering key : 用来排序, 可以是复合的
+
+[资料](https://dzone.com/articles/cassandra-data-modeling-primary-clustering-partiti)
+
 
 # Replica
 ### MySQL : master and 2 slave, [write-ahead logging](https://en.wikipedia.org/wiki/Write-ahead_logging)
