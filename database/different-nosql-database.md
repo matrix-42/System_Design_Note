@@ -20,7 +20,7 @@ The value is a blob that the data store just stores, without caring or knowing w
 
 ### Documented Store 
 
-* _**MongoDB**_
+* _**MongoDB \(B-Tree\)**_
 * _**Apache CouchDB**_
 
 A document database is, at its core, a key/value store with one major exception. **Instead of just storing any blob in it, a document db requires that the data will be store in a format that the database can understand.** The format can be XML, JSON, Binary JSON \(MongoDB\), or just about anything, as long as the database can understand it. Which means that we can now allow **queries on the document data. \(for example, a secondary index\)**
@@ -29,22 +29,24 @@ Document stores allow you to play with your data and store it however you see fi
 
 
 
-### Column Store
+### Wide Column Store \(Bigtable Like\)
 
 * _**Cassandra**_ 
 * _**Hbase**_
 
-The main advantages of storing data in columns over relational DBMS are fast search/access and data aggregation. Relational databases store a single row as a continuous disk entry. Different rows are stored in different places on the disk while columnar databases store all the cells corresponding to a column as a continuous disk entry, thus making the **search/access faster.**
+Databases that are similar to key-value but allow a very large number of columns. They are well suited for analyzing huge data sets.
 
 Each column family can be compared to a container of rows in an RDBMS table, where the key identifies the row and the row consists of multiple columns. The difference is that various rows do not have to have the same columns, and columns can be added to any row at any time without having to add them to other rows.
 
-This allows for much faster querying and processing of data while storing data that's somewhat related
+{% hint style="warning" %}
+Wide column stores 并不是 column oriented storage, 因为column family 内, 数据是 row oriented 的. 
+{% endhint %}
 
-Many consider wide-column stores to be two-dimensional key-value databases
+Wide column stores 是基于 bigtable model 的, 所以在需要大量的写时, 或者连续读时, 效率很高. \(Like Wechat\)
 
 ### Graph Store
 
-
+....
 
 
 
