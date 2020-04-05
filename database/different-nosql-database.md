@@ -4,7 +4,9 @@ description: 四种不同的非关系型数据库
 
 # Different NoSQL Database
 
-## Key-Value Store 
+## Four types of NoSQL Database
+
+### Key-Value Store 
 
 * _**Redis**_
 * _**MemcacheDB**_
@@ -16,7 +18,7 @@ The value is a blob that the data store just stores, without caring or knowing w
 
 **Cons:** No Columns
 
-## Documented Store 
+### Documented Store 
 
 * _**MongoDB**_
 * _**Apache CouchDB**_
@@ -27,7 +29,7 @@ Document stores allow you to play with your data and store it however you see fi
 
 
 
-## Column Store
+### Column Store
 
 * _**Cassandra**_ 
 * _**Hbase**_
@@ -40,7 +42,7 @@ This allows for much faster querying and processing of data while storing data t
 
 Many consider wide-column stores to be two-dimensional key-value databases
 
-## Graph Store
+### Graph Store
 
 
 
