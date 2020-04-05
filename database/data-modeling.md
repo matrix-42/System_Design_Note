@@ -1,4 +1,4 @@
-# Data modeling
+# Some Database
 
 * [MySQL](data-modeling.md#mysql)
 * [MongoDB](data-modeling.md#mongodb)
