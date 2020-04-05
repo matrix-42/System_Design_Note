@@ -25,7 +25,7 @@ The value is a blob that the data store just stores, without caring or knowing w
 
 A document database is, at its core, a key/value store with one major exception. **Instead of just storing any blob in it, a document db requires that the data will be store in a format that the database can understand.** The format can be XML, JSON, Binary JSON \(MongoDB\), or just about anything, as long as the database can understand it. Which means that we can now allow **queries on the document data. \(for example, a secondary index\)**
 
-Document stores allow you to play with your data and store it however you see fit. They have fast writing, good query times based on indexing, but the main advantage is the schema _flexibility_ and nestibility.
+Document stores allow you to play with your data and store it however you see fit. They have fast writing, good query times based on indexing, but the main advantage is the **schema flexibility** and nestibility.
 
 
 
