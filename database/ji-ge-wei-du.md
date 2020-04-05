@@ -10,11 +10,11 @@
 
 ## Storage Engine
 
-* Row oriented
+* Row oriented \(OLTP\)
   * Hash
   * **LSM-Tree**
   * **B-Tree**
-* Column oriented
+* Column oriented \(OLAP\)
 
 ## Example:
 
