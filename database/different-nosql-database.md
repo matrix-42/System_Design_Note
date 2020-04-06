@@ -30,7 +30,11 @@ Document stores allow you to play with your data and store it however you see fi
 * _**Cassandra**_ 
 * _**Hbase**_
 
-Databases that are similar to key-value but allow a very large number of columns. They are well suited for analyzing huge data sets.
+                                                            ![](../.gitbook/assets/wcd-pic1-768x519.png) 
+
+Many consider wide-column stores to be two-dimensional key-value databases
+
+Databases that are similar to key-value but allow a very **large number of columns**. They are well suited for analyzing huge data sets.
 
 Each column family can be compared to a container of rows in an RDBMS table, where the key identifies the row and the row consists of multiple columns. The difference is that various rows do not have to have the same columns, and columns can be added to any row at any time without having to add them to other rows.
 
@@ -38,9 +42,7 @@ Each column family can be compared to a container of rows in an RDBMS table, whe
 Wide column stores 并不是 column oriented storage, 因为column family 内, 数据是 row oriented 的. 
 {% endhint %}
 
-Wide column stores 是基于 bigtable model 的, 所以在需要大量的写时, 或者连续读时, 效率很高. \(Like Wechat\)
-
-Many consider wide-column stores to be two-dimensional key-value databases
+Wide column stores 是基于 **bigtable** model 的, 所以在需要大量的写时, 或者连续读时, 效率很高. \(Like Wechat\)
 
 ## Graph Store
 
