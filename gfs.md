@@ -100,6 +100,10 @@
 
 {% embed url="https://www.jianshu.com/p/5b3f278f8bde" %}
 
+{% embed url="https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf" %}
+
+
+
 
 
 \*\*\*\*
