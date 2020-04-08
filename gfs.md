@@ -24,7 +24,7 @@
 
 ![Master + many Chunk Servers](.gitbook/assets/screen-shot-2020-04-05-at-1.55.48-pm.png)
 
-#### **Mater**
+#### **Master**
 
 * Store metadata
 * For every file , store chuck numbers and which chunk \(chunk handler\) located at which chunkserver
@@ -57,7 +57,7 @@
 
 ## Failure and Recover \(key\)
 
-### Discover the failure in a chunk?
+### Discover the data failure in a chunk?
 
 * **Check Sum** \(MD5, SHA1, SHA256 and SHA512\)
 * 一个chunk被分解为多个64KB的块，每个块有对应32位的checksum。checksum被保存在内存中，并用利用日志持久化保存，与用户数据是隔离的，当然，这里的内存和持久化都是在**chunkserver**上。当chunkserver收到读数据请求的时候，会比对文件数据与对应的checksum，如果发现不匹配，会告知client，client从其他的读取；同时，也会告知master，master选择新的chunkserver来restore这个损坏的chunk
