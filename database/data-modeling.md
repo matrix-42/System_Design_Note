@@ -49,6 +49,8 @@
 
 ## MongoDB
 
+[官方文档](https://docs.mongodb.com/manual/sharding/)
+
 ### 1. 结构
 
 * collection : 一级结构
@@ -66,9 +68,11 @@
 
 ### 4. Faster than SQL?
 
-* [https://stackoverflow.com/questions/9702643/mysql-vs-mongodb-1000-reads](https://stackoverflow.com/questions/9702643/mysql-vs-mongodb-1000-reads)
+{% embed url="https://stackoverflow.com/questions/9702643/mysql-vs-mongodb-1000-reads" %}
 
 ## Cassandra
+
+[官方文档](http://cassandra.apache.org/doc/latest/architecture/overview.html)
 
 ### 1. 结构
 

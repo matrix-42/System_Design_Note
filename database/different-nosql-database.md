@@ -30,8 +30,6 @@ Document stores allow you to play with your data and store it however you see fi
 * _**Cassandra**_ 
 * _**Hbase**_
 
-                                                            ![](../.gitbook/assets/wcd-pic1-768x519.png) 
-
 Many consider wide-column stores to be two-dimensional key-value databases
 
 Databases that are similar to key-value but allow a very **large number of columns**. They are well suited for analyzing huge data sets.
