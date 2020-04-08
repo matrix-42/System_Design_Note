@@ -16,7 +16,7 @@
   * **B-Tree**
 * Column oriented \(OLAP\)
 
-## Example:
+## Examples
 
 * **MongoDB**: Document database using B-Tree engine.
 * **Cassandra**: Wide column database using LSM-Tree engine.
