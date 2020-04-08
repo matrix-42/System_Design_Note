@@ -1,4 +1,4 @@
-# Replica
+# Replication
 
 ## MySQL : master and 2 slave, [write-ahead logging](https://en.wikipedia.org/wiki/Write-ahead_logging)
 

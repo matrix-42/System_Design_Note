@@ -1,4 +1,4 @@
-# Sharding
+# Partitioning
 
 ## MongoDB
 
