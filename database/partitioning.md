@@ -46,10 +46,10 @@ The process of moving load from one node in the cluster to another.
 * Data size increases, need more **storage**.
 * Machine fails, need other machine to **take over**.
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 **Why not just mod by number of Node?**
 
-If the number of nodes N changes most of the keys need ot be moved from one node to another. We should't move data around more than necessary.
+If the number of nodes N changes most of the keys need to be moved from one node to another. We shouldn't move data around more than necessary.
 {% endhint %}
 
 ### Fixed number of partitions
@@ -79,7 +79,7 @@ If the number of nodes N changes most of the keys need ot be moved from one node
    * Hash it to a single integer.
    * Move clockwise on the ring until finding the first node it encounters.
    * That node is the one that contains the key.
-3. We add “virtual node” for node. Instead of mapping each node to a single point on the ring, we map it to multiple points on the ring.
+3. We add “virtual node” for nodes. Instead of mapping each node to a single point on the ring, we map it to multiple points on the ring.
 {% endhint %}
 
 ## Request Routing
