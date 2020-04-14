@@ -71,9 +71,20 @@ If the number of nodes N changes most of the keys need ot be moved from one node
 * When add new node, randomly chose a fixed number of partitions to split and move date to the new node.
 * The randomization can produce unfair split, but considering every node has a large number of partitions \(at least 256 in Cassandra\), the new node ends up taking a fair share of load.
 
+{% hint style="info" %}
+**Consistent Hashing:**
+
+1. Given a list of nodes, hash them to integers in the range and map to hash ring.
+2. To map a key to a node,
+   * Hash it to a single integer.
+   * Move clockwise on the ring until finding the first node it encounters.
+   * That node is the one that contains the key.
+3. We add “virtual node” for node. Instead of mapping each node to a single point on the ring, we map it to multiple points on the ring.
+{% endhint %}
+
 ## Request Routing
 
-How dose client know which node has which data?
+How does client know which node has which data?
 
 We need a separate **coordination service** to keep track of this cluster metadata.
 
