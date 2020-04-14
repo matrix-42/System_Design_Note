@@ -15,7 +15,7 @@
 ## Read and write 
 
 * Client write to leader
-* Leader sand data to followers \(WAL\)
+* Leader send data to followers \(WAL\)
 * Client can read from either leader or followers
 
 > WAL:  All modifications are written to a log before they are applied
@@ -38,8 +38,8 @@
 
 ### Add new follower
 
-* Leader continuely take snapshot.
-* Follower copy hte snapshot.
+* Leader continually take snapshot.
+* Follower copy the snapshot.
 * Follower request all changes after snapshot has taken.
 
 ## Problem of Replication
