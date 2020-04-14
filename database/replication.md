@@ -25,8 +25,8 @@
 ### Follower failure
 
 * Follower keep a log of changes received form the leader.
-* When follower crashes and restart, it connect to leader and request all newer changed based on it' own log.
-* Follower catch up by apply there changes.
+* When follower crashes and restart, it connect to leader and request all newer changed based on it's own log.
+* Follower catch up by apply these changes.
 
 ### leader failure
 
