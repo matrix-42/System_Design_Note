@@ -1,12 +1,25 @@
 # Database
 
+## Data model
 
+* **Relational**
+* **Document**
+* **Key value**
+* **Wide column**
+* Graph
 
-{% page-ref page="data-modeling.md" %}
+## Storage Engine
 
-{% page-ref page="replication.md" %}
+* Row oriented \(OLTP\)
+  * Hash
+  * **LSM-Tree**
+  * **B-Tree**
+* Column oriented \(OLAP\)
 
-{% page-ref page="partitioning.md" %}
+## Examples
+
+* **MongoDB**: Document database using B-Tree engine.
+* **Cassandra**: Wide column database using LSM-Tree engine.
 
 
 
