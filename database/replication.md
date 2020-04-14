@@ -44,10 +44,14 @@
 
 ## Problem of Replication
 
-Replication can be synchronous and asynchrnous. for  
+Replication can be synchronous and asynchronous.
 
-* **Replication lag**
-* **Solution: Transaction** 
+* Synchronous: the leader wait until followers confirmed received the write before report to user
+* Asynchronous: the leader send the massage, don't wait for a response from the followers.
+
+**Asynchronous can be fast but when Replication lag increases server could fail.**
+
+**Solution: Transaction** 
 
 \*\*\*\*
 

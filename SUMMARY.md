@@ -7,6 +7,7 @@
   * [Some Database](database/data-modeling.md)
   * [Replication](database/replication.md)
   * [Partitioning](database/partitioning.md)
-* [B Tree & B+Tree](untitled.md)
+* [B Tree & B+Tree](b-tree.md)
+* [Bigtable](bigtable.md)
 * [GFS](gfs.md)
 
