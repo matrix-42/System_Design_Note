@@ -15,7 +15,7 @@
 ## Read and write 
 
 * Client write to leader
-* Leader sand data to followers \(WAL\)
+* Leader send data to followers \(WAL\)
 * Client can read from either leader or followers
 
 > WAL:  All modifications are written to a log before they are applied
@@ -25,8 +25,8 @@
 ### Follower failure
 
 * Follower keep a log of changes received form the leader.
-* When follower crashes and restart, it connect to leader and request all newer changed based on it' own log.
-* Follower catch up by apply there changes.
+* When follower crashes and restart, it connect to leader and request all newer changed based on it's own log.
+* Follower catch up by apply these changes.
 
 ### leader failure
 
@@ -38,8 +38,8 @@
 
 ### Add new follower
 
-* Leader continuely take snapshot.
-* Follower copy hte snapshot.
+* Leader continually take snapshot.
+* Follower copy the snapshot.
 * Follower request all changes after snapshot has taken.
 
 ## Problem of Replication

@@ -33,15 +33,7 @@ description: 注册、登录、用户信息查询 好友关系存储
 
 ## Service
 
-* **AuthService**
-  * Sign in
-  * Sign up
-* **UserService**
-  * Edit info
-  * Query user
-* **FriendService**
-  * Follow
-  * Unfollow
+                                                   ![](../.gitbook/assets/picture1.png)                               
 
 ## Storage
 
@@ -68,11 +60,7 @@ description: 注册、登录、用户信息查询 好友关系存储
 
 #### Session Table Schema
 
-| Type | Field |
-| :--- | :--- |
-| **PK** | **Session\_key** |
-| \*\*\*\* | **User\_id** |
-| \*\*\*\* | **Expire\_at** |
+                                                         ![](../.gitbook/assets/picture1%20%282%29.png) 
 
 ### Friendship Service
 

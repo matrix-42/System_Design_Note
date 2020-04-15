@@ -12,4 +12,5 @@
 * [System Design Problems](system-design-problems/README.md)
   * [TinyURL](system-design-problems/tinyurl.md)
   * [User System](system-design-problems/user-system.md)
+  * [NewsFeed](system-design-problems/newsfeed.md)
 
