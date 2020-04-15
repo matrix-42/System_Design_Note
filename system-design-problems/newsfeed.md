@@ -1,5 +1,9 @@
 # NewsFeed
 
+{% hint style="danger" %}
+API Design
+{% endhint %}
+
 ## Scenario
 
 ### Feature
@@ -19,10 +23,13 @@
 
 ## Service
 
-* Tweet service
-  * Timeline
-  * Newsfeed
-  * Post
+### Tweet service
+
+* Timeline
+* Newsfeed
+* Post
+
+### API design
 
 ## Storage
 
@@ -61,7 +68,7 @@
 
 
 
-### Pull VS. Push
+### Pull VS. Push, Pros and Cons
 
 **Pull:** 
 
@@ -79,6 +86,54 @@
   * 好处是可以用异步任务在后台执行 \(Async Tasks Server\)，无需用户等待
 
 ## Scale
+
+### Pull model 
+
+#### Read latency
+
+* **Cache** every user's **Timeline**
+  * latest 1000 tweets.
+* **Cache** every user's **News Feed**
+  * Just access DB for tweets that created after last cached News feed.
+  * If cache missed, just do K-merge sort like before.
+
+#### Sharding
+
+* Sharding Tweet Table by owner\_id, since we need to query owner\_id to pull tweets
+
+### Push model
+
+#### Waste storage space 
+
+* don't need, disk is cheap
+
+#### Fanout is painful for celebrities \(may need hours!\)
+
+* Push 结合 Pull 的优化方案
+* 普通的用户仍然 Push 
+* 将 Lady Gaga 这类的用户，标记为明星用户 \(在usertable 里增加一栏\)
+* 对于明星用户，不 Push 到用户的 News Feed 中 
+* 当用户需要的时候，来明星用户的 Timeline 里取，并合并到 News Feed 里
+
+#### Sharding
+
+* Sharding NewsFeed Table by owner\_id, since we need to query owner\_id to pull tweets
+
+
+
+{% hint style="info" %}
+* 什么时候用 Push？
+  * 资源少 
+  * 想偷懒，少写代码 
+  * 实时性要求不高 
+  * 用户发帖比较少 
+  * 双向好友关系，没有明星问题（比如朋友圈）
+* 什么时候用 Pull ?
+  * 资源充足 \(memory\)
+  * 实时性要求高 
+  * 用户发帖很多 
+  * 单向好友关系，有明星问题
+{% endhint %}
 
 
 

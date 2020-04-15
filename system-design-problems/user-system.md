@@ -77,10 +77,10 @@ description: 注册、登录、用户信息查询 好友关系存储
 
 * The above is the 2-way friendship, what about 1-way frendship?
   * create 2 tables : Following table and Follower table
-* How to find Mutual friend?
-  * ???
-* Linkedin 六度关系?
-  * ???
+* _**How to find Mutual friend?**_
+  * _**???**_
+* _**Linkedin 六度关系?**_
+  * _**???**_
 
 ### User Service
 
@@ -96,7 +96,7 @@ description: 注册、登录、用户信息查询 好友关系存储
 
                                                            ![](../.gitbook/assets/user_table.png) 
 
-* How to use NoSQL to store UserTable?
+* How to use NoSQL to store User Table?
   * Create multiple table to search by email username .....
 
 ## Scale
