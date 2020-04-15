@@ -33,7 +33,7 @@ description: 注册、登录、用户信息查询 好友关系存储
 
 ## Service
 
-                                                   ![](../.gitbook/assets/picture1.png)                               
+                                                   ![](../.gitbook/assets/picture1%20%281%29.png)                               
 
 ## Storage
 
@@ -60,7 +60,7 @@ description: 注册、登录、用户信息查询 好友关系存储
 
 #### Session Table Schema
 
-                                                         ![](../.gitbook/assets/picture1%20%282%29.png) 
+                                                         ![](../.gitbook/assets/picture1.png) 
 
 ### Friendship Service
 
@@ -73,14 +73,7 @@ description: 注册、登录、用户信息查询 好友关系存储
 
 #### Friendship Table Schema
 
-| Type | Field |
-| :--- | :--- |
-| **Row\_key** | **User\_id** |
-| **column\_key1** | **Friend\_id1** |
-| **column\_key2** | **Friend\_id2** |
-| **column\_key3** | **Friend\_id3** |
-| **...** | **...** |
-| **Value** | **is\_friend, is\_block, timestamp, ....** |
+                                                          ![](../.gitbook/assets/picture1%20%282%29.png) 
 
 * The above is the 2-way friendship, what about 1-way frendship?
   * create 2 tables : Following table and Follower table
