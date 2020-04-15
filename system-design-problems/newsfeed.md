@@ -23,19 +23,21 @@ API Design
 
 ## Service
 
-### Tweet service
+**Tweet service**
 
 * Timeline
 * Newsfeed
 * Post
 
-### API design
+{% hint style="danger" %}
+API design
+{% endhint %}
 
 ## Storage
 
 ### Pull model
 
-**schema**
+**Schema**
 
                        ![](../.gitbook/assets/user_table.png)![](../.gitbook/assets/tweet_table.png)            
 
@@ -60,7 +62,7 @@ API Design
 **Post tweet:**
 
 * Query Friendship Table, find followers
-* Add rows to NewsFeed Table, owner is the followers.
+* Add rows to NewsFeed Table, owner\_id is the followers' user\_id.
 
 **News feed:**
 
