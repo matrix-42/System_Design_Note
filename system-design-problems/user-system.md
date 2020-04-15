@@ -66,8 +66,6 @@ description: 注册、登录、用户信息查询 好友关系存储
 * Cache aside  / Cache through: Radis
 {% endhint %}
 
-
-
 #### Session Table Schema
 
 | Type | Field |
