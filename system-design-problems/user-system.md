@@ -47,6 +47,8 @@ description: 注册、登录、用户信息查询 好友关系存储
 
 ### Authentication Service
 
+#### Routine
+
 * Client log in, server create Session.
 * Server return Session Key to client.
 * Every time client send request to server, it should include Session Key in its cookie.
@@ -103,7 +105,7 @@ description: 注册、登录、用户信息查询 好友关系存储
 
 ### User Service
 
-#### Database select:
+#### Database select
 
 * **SQL**
   * Multi\_index
