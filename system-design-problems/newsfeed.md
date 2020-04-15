@@ -36,7 +36,7 @@
 
 **Post tweet:**
 
-* add 1 tow to tweet table
+* Add 1 tow to tweet table
 
 **News Feed:**
 
