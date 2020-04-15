@@ -33,7 +33,7 @@ description: 注册、登录、用户信息查询 好友关系存储
 
 ## Service
 
-                                                   ![](../.gitbook/assets/picture1%20%281%29.png)                               
+                                                   ![](../.gitbook/assets/picture1.png)                               
 
 ## Storage
 
@@ -60,7 +60,7 @@ description: 注册、登录、用户信息查询 好友关系存储
 
 #### Session Table Schema
 
-                                                         ![](../.gitbook/assets/picture1.png) 
+                                                         ![](../.gitbook/assets/picture1%20%282%29.png) 
 
 ### Friendship Service
 
@@ -73,7 +73,7 @@ description: 注册、登录、用户信息查询 好友关系存储
 
 #### Friendship Table Schema
 
-                                                          ![](../.gitbook/assets/picture1%20%282%29.png) 
+                                                          ![](../.gitbook/assets/picture1%20%281%29.png) 
 
 * The above is the 2-way friendship, what about 1-way frendship?
   * create 2 tables : Following table and Follower table
@@ -94,12 +94,7 @@ description: 注册、登录、用户信息查询 好友关系存储
 
 #### User Table Schema
 
-| Type | Field |
-| :--- | :--- |
-| **PK** | **User\_id** |
-| \*\*\*\* | **UserName** |
-| \*\*\*\* | **Email** |
-| \*\*\*\* | **Password** |
+                                                           ![](../.gitbook/assets/user_table.png) 
 
 * How to use NoSQL to store UserTable?
   * Create multiple table to search by email username .....
