@@ -4,6 +4,10 @@ description: 'Wechat, Facebook messenger, Line, ....'
 
 # Design Chat App
 
+{% hint style="warning" %}
+Channel Service
+{% endhint %}
+
 ## Scenario
 
 ### Feature
@@ -95,9 +99,9 @@ What about Group Chat \(500 people\)?
 * 增加一个Channel Service（频道服务） 
 * 为每个聊天的Thread增加一个Channel信息 
 * 对于较大群，在线用户先需要订阅到对应的 Channel 上
-  * 用户上线时，Web Server \(message service\) 找到用户所属的频道（群），并通知 Channel Service 完成订阅 
+  * **用户上线时，Web Server** \(message service\) 找到用户所属的频道（群），并通知 Channel Service 完成订阅 
   * Channel就知道哪些频道里有哪些用户还活着 
-  * 用户如果断线了，Push Service 会知道用户掉线了，通知 Channel Service 从所属的频道里移除
+  * 用户如果断线了，**Push Service 会知道用户掉线了**，通知 Channel Service 从所属的频道里移除
 * Message Service 收到用户发的信息之后
   * 找到对应的channel 
   * 把发消息的请求发送给 Channel Service 
