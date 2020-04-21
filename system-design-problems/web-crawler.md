@@ -19,6 +19,8 @@
 
 ## Storage
 
+![](../.gitbook/assets/screen-shot-2020-04-20-at-7.16.49-pm.png)
+
 * Message Queue 
   * as _Queue_
 * Distributed file system
