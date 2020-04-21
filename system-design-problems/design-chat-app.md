@@ -4,12 +4,6 @@ description: 'Wechat, Facebook messenger, Line, ....'
 
 # Design Chat App
 
-{% hint style="danger" %}
-* 多机登陆
-* 在线状态
-* 用户正在输入
-{% endhint %}
-
 ## Scenario
 
 ### Feature
@@ -114,4 +108,29 @@ What about Group Chat \(500 people\)?
 
 
 
+
+### Typy Indicator
+
+“对方正在打字”这个功能是怎么实现的？
+
+* 首先 Storage 这个方面其实这个信息是不需要存储的，即便要存储（比如为了做数据分析）也就是存储最后一次 type 的时间就好了。 
+* client A 检测到用户正在输入以后，发一个轻量级的消息给 serve.
+* server 通过 push service 发正在输入的信息给 client B，然后 client B 就显示用户正在输入
+* 约定一个检测时间，比如当用户在输入框里输入的时候，大概每隔1-3s 就发送一次这种信息 push（具体取几秒钟看产品经理怎么拍脑袋了）。
+
+### Multi-device log in
+
+怎样实现不允许两个手机同时登录微信功能?
+
+* 如从手机登陆时，查询是否已经有其他手机处于登陆状态, By device\_id.
+* 如果没有，则创建新的 session.
+* 如果有，将对应的 session 设为 expire 或者删除，并发送 push notification 让已经登录的手机 logout
+  * 如果 Push Notification 失败也没有关系 
+  * 该手机会在下次访问任何API的时候发现自己已经logout了并跳转至登入界面
+
+### Online Status
+
+* Add User\_status table \(id, User\_id, Last\_update\_at\)
+* Client update it's User\_table every 3s.
+* Client check friend's status at the same time.
 
