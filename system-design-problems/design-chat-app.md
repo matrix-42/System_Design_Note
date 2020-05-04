@@ -2,8 +2,6 @@
 description: 'Wechat, Facebook messenger, Line, ....'
 ---
 
-[TOC]
-
 # Design Chat App
 
 {% hint style="warning" %}
@@ -55,18 +53,18 @@ Channel Service
   * Row\_key: User\_id
   * Column\_key: Updated\_at \(Since we need to update the data happend after last fetch\)
 
-#### **How to get all msg in a Thread?**
+**How to get all msg in a Thread?**
 
 * **SELECT** from Massage table
 * **WHERE** thread\_id = xxxxx
 * **ORDER** by Creat\_at
 * **LIMIT** 20
 
-#### **What id user has personal setting for each thread?**
+**What id user has personal setting for each thread?**
 
 * Add User\_thread table
 
-#### **How to get Thread\_id if front end only give participant user id?**
+**How to get Thread\_id if front end only give participant user id?**
 
 * Add field **Participants\_hash\_code** to Thread table
 * Participants\_hash\_code = Hash\(sorted\(participants\_user\_ids\)\)
@@ -110,10 +108,6 @@ What about Group Chat \(500 people\)?
   * 原来发500条消息变成发1条消息
 * Channel Service 找到当前在线的用户
   * 然后发给 Push Service 把消息 Push 出去
-
-
-
-
 
 ### Typy Indicator
 
