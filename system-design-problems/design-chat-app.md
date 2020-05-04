@@ -2,6 +2,8 @@
 description: 'Wechat, Facebook messenger, Line, ....'
 ---
 
+[TOC]
+
 # Design Chat App
 
 {% hint style="warning" %}
