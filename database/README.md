@@ -3,17 +3,17 @@
 ## Data model
 
 * **Relational**
-* **Document**
-* **Key value**
-* **Wide column**
-* Graph
+* \*\*\*\*[**Document**](different-nosql-database.md#documented-store)\*\*\*\*
+* \*\*\*\*[**Key value**](different-nosql-database.md#key-value-store)\*\*\*\*
+* \*\*\*\*[**Wide column**](different-nosql-database.md#wide-column-store-bigtable-like)\*\*\*\*
+* [Graph](different-nosql-database.md#graph-store)
 
 ## Storage Engine
 
 * Row oriented \(OLTP\)
   * Hash
-  * **LSM-Tree**
-  * **B-Tree**
+  * \*\*\*\*[**LSM-Tree**](bigtable.md)\*\*\*\*
+  * \*\*\*\*[**B-Tree**](b-tree.md)\*\*\*\*
 * Column oriented \(OLAP\)
 
 ## Examples
