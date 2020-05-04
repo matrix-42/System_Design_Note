@@ -9,7 +9,7 @@
 
 ### Basic OS File System
 
-![Directory file + Blocks](../.gitbook/assets/screen-shot-2020-04-05-at-1.54.27-pm.png)
+![Directory file + Blocks](../../.gitbook/assets/screen-shot-2020-04-05-at-1.54.27-pm.png)
 
 #### Directory file 
 
@@ -22,7 +22,7 @@
 
 ### **Google File System**
 
-![Master + many Chunk Servers](../.gitbook/assets/screen-shot-2020-04-05-at-1.55.48-pm.png)
+![Master + many Chunk Servers](../../.gitbook/assets/screen-shot-2020-04-05-at-1.55.48-pm.png)
 
 #### **Master**
 
@@ -37,7 +37,7 @@
 
 ## Read Data
 
-![](../.gitbook/assets/readgfs.jpg)
+![](../../.gitbook/assets/readgfs.jpg)
 
 1. client通过文件名、chunk index向master查询chunk的分布 
 2. master回复chunk handler以及副本分布 \(**Chunk List**\)
@@ -45,7 +45,7 @@
 
 ## Write Data
 
-![](../.gitbook/assets/writegfs.jpg)
+![](../../.gitbook/assets/writegfs.jpg)
 
 1. client向master查询chunk的primary所在的chunkserver以及其他副本的分布，如果没有primary，master会选择一个作为该chunk的primary
 2. master回复client primary和其他副本的分布信息。client会cache返回的metadata 

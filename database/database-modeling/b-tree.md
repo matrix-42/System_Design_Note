@@ -4,7 +4,7 @@ B树, B+树 是一种自平衡的树，能够保持数据有序. 这种数据结
 
 ## B Tree
 
-![](../.gitbook/assets/btree.png)
+![](../../.gitbook/assets/btree.png)
 
 B树的特点:
 
@@ -19,7 +19,7 @@ B树的特点:
 
 ## B+ Tree
 
-![](../.gitbook/assets/b+tree.png)
+![](../../.gitbook/assets/b+tree.png)
 
 从图中也可以看到，B+树与B树的不同在于：
 

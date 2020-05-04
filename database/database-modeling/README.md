@@ -1,4 +1,4 @@
-# Database
+# Database Modeling
 
 ## Data model
 
@@ -18,8 +18,8 @@
 
 ## Scale
 
-* \*\*\*\*[**Replication**](replication.md)\*\*\*\*
-* \*\*\*\*[**Partition**](partitioning.md)\*\*\*\*
+* \*\*\*\*[**Replication**](../replication.md)\*\*\*\*
+* \*\*\*\*[**Partition**](../partitioning.md)\*\*\*\*
 
 ## Examples
 
