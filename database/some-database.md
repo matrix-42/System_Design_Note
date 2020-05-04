@@ -1,8 +1,8 @@
 # Some Database
 
-* [MySQL](data-modeling.md#mysql)
-* [MongoDB](data-modeling.md#mongodb)
-* [Cassandra](data-modeling.md#cassandra)
+* [MySQL](some-database.md#mysql)
+* [MongoDB](some-database.md#mongodb)
+* [Cassandra](some-database.md#cassandra)
 
 ## MySQL
 

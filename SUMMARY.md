@@ -3,7 +3,7 @@
 * [Index](README.md)
 * [Database](database/README.md)
   * [Different NoSQL Database](database/different-nosql-database.md)
-  * [Some Database](database/data-modeling.md)
+  * [Some Database](database/some-database.md)
   * [Replication](database/replication.md)
   * [Partitioning](database/partitioning.md)
   * [GFS](database/gfs.md)
