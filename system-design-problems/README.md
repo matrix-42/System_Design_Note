@@ -2,4 +2,5 @@
 
 * [TinyURL](tinyurl.md)
 
-[TOC]
+\[TOC\]
+
