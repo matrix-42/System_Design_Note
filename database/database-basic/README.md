@@ -1,4 +1,4 @@
-# Database Modeling
+# Database Basic
 
 ## Data model
 

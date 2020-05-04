@@ -4,12 +4,12 @@
 
 ## Database
 
-* [Database Modeling](database/database-modeling/README.md)
-  * [Different NoSQL Database](database/database-modeling/different-nosql-database.md)
-  * [Some Database](database/database-modeling/some-database.md)
-  * [GFS](database/database-modeling/gfs.md)
-  * [B Tree & B+Tree](database/database-modeling/b-tree.md)
-  * [Bigtable](database/database-modeling/bigtable.md)
+* [Database Basic](database/database-basic/README.md)
+  * [Different NoSQL Database](database/database-basic/different-nosql-database.md)
+  * [Some Database](database/database-basic/some-database.md)
+  * [GFS](database/database-basic/gfs.md)
+  * [B Tree & B+Tree](database/database-basic/b-tree.md)
+  * [Bigtable](database/database-basic/bigtable.md)
 * [Replication](database/replication.md)
 * [Partitioning](database/partitioning.md)
 

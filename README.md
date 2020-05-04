@@ -2,7 +2,7 @@
 
 
 
-{% page-ref page="database/database-modeling/" %}
+{% page-ref page="database/database-basic/" %}
 
 
 
