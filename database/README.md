@@ -16,6 +16,11 @@
   * \*\*\*\*[**B-Tree**](b-tree.md)\*\*\*\*
 * Column oriented \(OLAP\)
 
+## Scale
+
+* \*\*\*\*[**Replication**](replication.md)\*\*\*\*
+* \*\*\*\*[**Partition**](partitioning.md)\*\*\*\*
+
 ## Examples
 
 * \*\*\*\*[**MySQL**](some-database.md#mysql): Raletion database using B-Tree engine.
