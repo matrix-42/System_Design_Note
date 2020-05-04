@@ -6,6 +6,10 @@ B树, B+树 是一种自平衡的树，能够保持数据有序. 这种数据结
 
 ![](https://upload-images.jianshu.io/upload_images/7361383-b4226ba0e306bd27.png)
 
+{% embed url="https://upload-images.jianshu.io/upload\_images/7361383-b4226ba0e306bd27.png" %}
+
+
+
 B树的特点:
 
 1. 所有键值分布在整个树中
