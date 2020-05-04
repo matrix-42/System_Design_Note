@@ -4,11 +4,7 @@ B树, B+树 是一种自平衡的树，能够保持数据有序. 这种数据结
 
 ## B Tree
 
-![](https://upload-images.jianshu.io/upload_images/7361383-b4226ba0e306bd27.png)
-
-{% embed url="https://upload-images.jianshu.io/upload\_images/7361383-b4226ba0e306bd27.png" %}
-
-
+![](../.gitbook/assets/btree.png)
 
 B树的特点:
 
@@ -23,7 +19,7 @@ B树的特点:
 
 ## B+ Tree
 
-![B+&#x6811;&#x5C42;&#x6B21;&#x4E00;&#x822C;&#x4E0D;&#x8D85;&#x8FC7;&#x4E09;&#x5C42;&#xFF0C;&#x6240;&#x4EE5;&#x67E5;&#x627E;&#x6548;&#x7387;&#x5F88;&#x9AD8;](https://upload-images.jianshu.io/upload_images/7361383-3e9ef22b51d553c3.png)
+![](../.gitbook/assets/b+tree.png)
 
 从图中也可以看到，B+树与B树的不同在于：
 
