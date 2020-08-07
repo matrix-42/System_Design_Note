@@ -23,7 +23,7 @@
 
 ## Examples
 
-* \*\*\*\*[**MySQL**](some-database.md#mysql): Raletion database using B-Tree engine.
+* \*\*\*\*[**MySQL**](some-database.md#mysql): Relation database using B-Tree engine.
 * \*\*\*\*[**MongoDB**](some-database.md#mongodb): Document database using B-Tree engine.
 * \*\*\*\*[**Cassandra**](some-database.md#cassandra): Wide column database using LSM-Tree engine.
 
