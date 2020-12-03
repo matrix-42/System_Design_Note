@@ -9,7 +9,7 @@
 
 ### QPS
 
-* 10 days to crawed 1B pages \(1k web pages per sec\)
+* 10 days to crawled 1B pages \(1k web pages per sec\)
 * Storage: 10 T \(10 kB per web page\)
 
 ## Service
